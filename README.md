@@ -47,3 +47,32 @@ The app dir. Let it be.
 - Can be changed to a specific domain/protocol if needed. 
 - Default is https and whatever domain you are on.
 - Needed for url generation
+
+## Templating
+
+You can find the templates under `app/template`. Example templates are provided which should show you everything you need to know.
+
+## Data
+
+- In the data repo create folders and files in github markdown format. (The extension `.md` is automatically removed/added.)
+- Use meta data to select which pages are in the menu, what the title is and which layout (template file) to use.
+  - `title` can be used for example to set the title html-tag
+  - If `inmenu` is present and either `yes` or `true` it will be in the menu
+  - The field `menu` can overwrite the default name displayed in the menu. If not present it will select either the title if present or the filename.
+
+Here an example:
+
+``` markdown
+---
+title: Home
+inmenu: yes
+menu: Home
+---
+
+# This is page content
+
+- Lorem
+- Ipsum
+```
+
+
