@@ -1,0 +1,6 @@
+<?php
+
+$CONFIG = [
+    // GIT-Data
+    'git_repo' => "SOME GIT REPO",
+];

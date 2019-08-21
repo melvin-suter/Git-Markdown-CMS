@@ -1,0 +1,5 @@
+{
+    "require": {
+        "pagerange/metaparsedown": "^1.0"
+    }
+}
